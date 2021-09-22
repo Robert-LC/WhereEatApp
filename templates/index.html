@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Where Should We Eat?</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <link rel="stylesheet" href="..\styles\styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Where Should We Eat?</title>
+    <link rel="stylesheet" href="///styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  
+ 
   <!-- Hero head: will stick at the top -->
-  <section class="hero is-success is-fullheight bg-img">
+<section class="hero is-success is-fullheight">
     <div class="hero-head">
       <header class="navbar">
         <div class="container">
@@ -20,11 +21,10 @@
           </div>
           <div id="navbarMenuHeroC" class="navbar-menu">
             <div class="navbar-end">
-              <!--Github Logo Button-->
               <span class="navbar-item">
-                <a class="button is-success is-inverted">
+                <a class="button is-success is-inverted" href="https://github.com/Robert-LC">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i class="fa fa-github"></i>
                   </span>
                   <span>Github</span>
                 </a>
@@ -35,7 +35,6 @@
       </header>
     </div>
     
-  
     <!-- Hero content: will be in the middle -->
     <div class="hero-body">
       <div class="container has-text-centered">
@@ -45,19 +44,17 @@
           <p class="subtitle">
             Don't Let the tough decision of where to eat haunt you any longer!
           </p>
-        
-        <!--Text Input and Submit-->
-        <div class="field has-addons">
-          <input class="input is-info has-addons" type="text" id="zip" maxlength="5" placeholder="Your Zip Code">
-          <div class="control">
-            <a class="button is-info">
-              Submit
-            </a>
+        <form method="POST">
+          <div class="field has-addons">
+            <input class="input is-info has-addons" type="text" name=zipCode id="zip" maxlength="5" placeholder="Your Zip Code">
+            <div class="control">
+              <a class="button is-info" href="results">
+                Search
+              </a>
+            </div>
           </div>
-        </div>
-        
-        <!--Checkbox Options-->
-        <div class="checkboxes">
+        </form>
+        <div class="service-type">
           <label class="checkbox">
             <input type="checkbox" checked>
             Fast Food
