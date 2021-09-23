@@ -44,25 +44,12 @@
           <p class="subtitle">
             Don't Let the tough decision of where to eat haunt you any longer!
           </p>
-        <form method="POST">
-          <div class="field has-addons">
-            <input class="input is-info has-addons" type="text" name=zipCode id="zip" maxlength="5" placeholder="Your Zip Code">
-            <div class="control">
-              <a class="button is-info" href="results">
-                Search
-              </a>
-            </div>
+        <form action="http://localhost:5000/results" method="POST">
+          <div class="control has-addons">
+            <input class="input is-info has-addons" type="text" name=zipCodeInput maxlength="5" placeholder="Your Zip Code">
+            <input type ="submit" value="submit">
           </div>
         </form>
-        <div class="service-type">
-          <label class="checkbox">
-            <input type="checkbox" checked>
-            Fast Food
-          </label>
-          <label class="checkbox">
-            <input type="checkbox" checked>
-            Dine-in
-          </label>
         </div>
       </div>
     </div>
